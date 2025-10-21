@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Viagens — Explore o Mundo</title>
+    <meta name="description" content="Landing page simples e responsiva de uma agência de viagens. Subscribe para ofertas." />
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Viagem+</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+        <nav id="main-nav" class="main-nav">
+          <ul>
+            <li><a href="#features">Destaques</a></li>
+            <li><a href="#destinations">Destinos</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#subscribe">Ofertas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Explore o Mundo com Ofertas Incríveis</h1>
+            <p>Pacotes personalizados, suporte 24/7 e os melhores preços para sua próxima aventura.</p>
+            <p class="cta-row">
+              <a class="btn primary" href="#subscribe">Receba Ofertas</a>
+              <a class="btn ghost" href="#destinations">Ver Destinos</a>
+            </p>
+            <ul class="trust-list">
+              <li>Flexibilidade de cancelamento</li>
+              <li>Suporte em Português</li>
+              <li>Pagamentos seguros</li>
+            </ul>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <!-- simple SVG illustration -->
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" class="hero-illustration">
+              <rect x="0" y="0" width="600" height="400" rx="16" fill="#F0F8FF" />
+              <path d="M60 300 Q150 180 260 260 T460 240" stroke="#4A90E2" fill="none" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="500" cy="90" r="40" fill="#FFD76E" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title">Por que escolher a Viagem+</h2>
+          <div class="grid features-grid">
+            <article class="feature">
+              <h3>Pacotes Personalizados</h3>
+              <p>Montamos roteiros sob medida para famílias, casais e viajantes solo.</p>
+            </article>
+            <article class="feature">
+              <h3>Preços Competitivos</h3>
+              <p>Negociamos com parceiros para garantir o melhor custo-benefício.</p>
+            </article>
+            <article class="feature">
+              <h3>Atendimento 24/7</h3>
+              <p>Equipe pronta para ajudar antes, durante e depois da viagem.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="destinations" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Destinos Populares</h2>
+          <div class="grid dest-grid">
+            <div class="card"><strong>Lisboa</strong><p>História e gastronomia.</p></div>
+            <div class="card"><strong>Rio de Janeiro</strong><p>Praias e vida noturna.</p></div>
+            <div class="card"><strong>Maldivas</strong><p>Praias paradisíacas.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <h2 class="section-title">O que nossos clientes dizem</h2>
+          <div class="grid testimonials">
+            <blockquote>
+              "Excelente atendimento e tudo saiu conforme o planejado." — Ana, Lisboa
+            </blockquote>
+            <blockquote>
+              "Recomendo — experiência inesquecível nas Maldivas." — Pedro, Malé
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="section subscribe-section">
+        <div class="container">
+          <h2 class="section-title">Receba ofertas exclusivas</h2>
+          <form id="subscribe-form" class="subscribe-form" novalidate>
+            <label for="email">Email</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required />
+              <button class="btn primary" type="submit">Inscrever</button>
+            </div>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Viagem+. Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
